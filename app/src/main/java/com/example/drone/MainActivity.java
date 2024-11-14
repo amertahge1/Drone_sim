@@ -65,6 +65,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonAtterrir=binding.buttonAtterrir;
+        buttonAtterrir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Atterrir();
+            }
+        });
+
+        Button buttonGauche=binding.buttonGauche;
+        buttonGauche.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Gauche();
+            }
+        });
+
+        Button buttonMonter=binding.buttonMonter;
+        buttonMonter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Monter();
+            }
+        });
+
     }
 
     /**
@@ -77,4 +102,8 @@ public class MainActivity extends AppCompatActivity {
     public native String Droite();
     public native String Reculer();
     public native String Decoller();
+    public native String Atterrir();
+    public native String Gauche();
+    public native String Monter();
+
 }
