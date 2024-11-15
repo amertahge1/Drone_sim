@@ -69,3 +69,19 @@ Java_com_example_drone_MainActivity_Monter(JNIEnv *env, jobject thiz) {
     return env->NewStringUTF( Tello.Monter(50).c_str());
 
 }
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_example_drone_MainActivity_Descendre(JNIEnv *env, jobject thiz) {
+    // TODO: implement Descendre()
+    TelloClientUDP Tello("192.168.10.1");
+    return env->NewStringUTF(Tello.Descendre(50).c_str());
+
+}
+extern "C"
+JNIEXPORT jstring JNICALL
+Java_com_example_drone_MainActivity_Trigo(JNIEnv *env, jobject thiz) {
+    // TODO: implement Trigo()
+    TelloClientUDP Tello("192.168.10.1");
+    return env->NewStringUTF(Tello.TournerTrigo(255).c_str());
+
+}

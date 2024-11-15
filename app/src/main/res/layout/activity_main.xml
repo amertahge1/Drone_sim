@@ -163,19 +163,20 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="245dp"
-        android:layout_height="30dp"
-        android:rotationX="4"
-        android:rotationY="4"
+        android:layout_width="423dp"
+        android:layout_height="56dp"
+        android:fontFamily="sans-serif"
+        android:hyphenationFrequency="none"
         android:text="Drone Tello Simulateur "
         android:textColor="#F1E9E9"
         android:textColorHighlight="#ECE6E6"
         android:textColorHint="#E4E9EC"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintHorizontal_bias="0.605"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057" />
+        app:layout_constraintVertical_bias="0.066" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

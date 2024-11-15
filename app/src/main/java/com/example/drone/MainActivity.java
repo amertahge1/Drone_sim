@@ -90,6 +90,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonDescendre=binding.buttonDescendre;
+
+        buttonDescendre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Descendre();
+            }
+        });
+
+        Button buttonTrigo=binding.buttonTrigo;
+        buttonTrigo.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Trigo();
+            }
+        }));
     }
 
     /**
@@ -105,5 +121,7 @@ public class MainActivity extends AppCompatActivity {
     public native String Atterrir();
     public native String Gauche();
     public native String Monter();
+    public native String Descendre();
+    public native String Trigo();
 
 }
